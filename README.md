@@ -1,9 +1,9 @@
-![Logo]:(https://github.com/duo-labs/phinn/raw/master/site/phinn.gif "Logo")
+![Logo](https://github.com/duo-labs/phinn/raw/master/chrome-ext/icon.png "Logo")
 
 # Project Phinn
 A toolkit to generate an offline Chrome extension to detect phishing attacks using a bespoke convolutional neural network.
 
-![Demo]:(https://github.com/duo-labs/phinn/raw/master/site/phinn.gif "Demo")
+![Demo](https://github.com/duo-labs/phinn/raw/master/site/phinn.gif "Demo")
 
 ## Background
 When it comes to phishing attacks what is the attacker actually attempting to accomplish? Primarily, they are trying to trick a user into voluntarily giving up their primary, and sometimes even secondary, credentials through a process of brand impersonation. With improvements to browser update hygiene attackers targeting modern corporate infrastructures have become less and less reliant on browser exploits to gain a foothold in to the corporate network. 
@@ -54,11 +54,11 @@ Note that the domain list is full FQDN and subdomains must be manually accounted
 
 Once you have this done its time to take a reference sample.  Navigate to a login page and click the Phinn chrome extension button. After a few seconds you will be presented with the network's analysis of the login form as can be seen in this Google example.
 
-![Demo]:(https://github.com/duo-labs/phinn/raw/master/site/popup1.png "Demo")
+![Demo](https://github.com/duo-labs/phinn/raw/master/site/popup1.png "Demo")
 
 Click the `Source` link to display an unmarked version of the image and right-click and save it to the folder you created in the samples directory. 
 
-![Demo]:(https://github.com/duo-labs/phinn/raw/master/site/popup2.png "Demo")
+![Demo](https://github.com/duo-labs/phinn/raw/master/site/popup2.png "Demo")
 
 Repeat this process for all other web-properties or identity providers you care about and remove the subdirectories that you do not care about only leaving the special purpose `negative` folder which contains negative samples and anything that triggers a false-positive. 
 
