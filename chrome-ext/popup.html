@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Duo Phinn</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      img { 
+        border: 1px solid;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        /*text-overflow: ellipsis; */
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+
+    <script src="lib/console.image.js"></script>
+    <script src="lib/convnet-min.js"></script>
+    <script src="lib/murmurHash3.js"></script>
+    <script src="phinn.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="results"></div>
+    <div id="status">Running Analysis...</div>
+    <div id="source-rect" hidden><a href="#" id="source-rect-link">Source</a><br/><img id="source-rect-img" hidden/></div>
+  </body>
+</html>
+

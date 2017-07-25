@@ -1,0 +1,37 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 2,
+
+  "name": "Duo Phinn",
+  "description": "This extension helps detect phishing attacks!",
+  "version": "1.1.0",
+  
+  "icons": { "16": "icon.png",
+      "48": "icon.png",
+     "128": "icon.png" },
+  
+  "background" : {
+	  "persistent": false,
+	  "scripts" : ["lib/console.image.js", "lib/convnet-min.js", "lib/murmurHash3.js", "phinn.js", "background.js"]
+  },
+  
+  "content_scripts": [{
+	  "matches": ["*://*/*"],
+	  "js": ["content.js"],
+	  "css": ["modal_template.css"],
+	  "run_at" : "document_end",
+	  "all_frames" : false
+  }],
+  
+  "web_accessible_resources" : [ "/modal_template.html"],
+
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs"
+  ]
+}

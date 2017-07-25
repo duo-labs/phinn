@@ -1,0 +1,84 @@
+/* The Modal (background) */
+.phinn-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4294967295; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	//line-height: 20px;
+}
+
+/* The Close Button */
+.phinn-close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.phinn-close:hover,
+.phinn-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.phinn-modal-header {
+    text-align:center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 2px 16px;
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Modal Body */
+.phinn-modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.phinn-modal-footer {
+    padding: 2px 16px;
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Modal Content */
+.phinn-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: phinn-animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: phinn-animatetop;
+    animation-duration: 0.4s
+}
+.phinn-modal-results img {
+    display:block;
+    margin: auto;
+}
+
+/* Add Animation */
+@-webkit-keyframes phinn-animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes phinn-animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}

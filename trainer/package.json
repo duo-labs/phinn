@@ -1,0 +1,14 @@
+{
+  "name": "node",
+  "version": "0.1.0",
+  "description": "node",
+  "main": "trainer.js",
+  "repository": "",
+  "author": "",
+  "dependencies": {
+    "canvas": "latest",
+    "convnetjs": "latest",
+    "minimist": "latest",
+    "pngjs": "latest"
+  }
+}
